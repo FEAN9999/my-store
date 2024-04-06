@@ -1,0 +1,14 @@
+.custom-nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 24px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  &.active {
+    background-color: #fff;
+    color: #000;
+  }
+}

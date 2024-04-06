@@ -1,0 +1,19 @@
+@if (isLoading) {
+<div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+} @else {
+<div class="row">
+    <div class="col-md-6">
+        <img [src]="infoProduct.image" alt="Product Image" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+        <h2>{{infoProduct.title}}</h2>
+        <h4>Price: {{infoProduct.price}} $</h4>
+        <button class="btn btn-primary" (click)="addToCart(infoProduct)">Add to Cart</button>
+    </div>
+</div>
+}

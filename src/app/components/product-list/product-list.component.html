@@ -1,0 +1,7 @@
+<div class="row">
+    @for (product of products | async; track $index) {
+    <div class="col-md-4 mb-4">
+        <app-product-item [product]="product" (addToCart)="addToCart($event)"></app-product-item>
+    </div>
+    }
+</div>
